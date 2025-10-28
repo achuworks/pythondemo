@@ -6,11 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git url: 'https://github.com/achuworks/pythondemo.git'
-            }
-        }
 
         stage('Install & Test') {
             steps {
